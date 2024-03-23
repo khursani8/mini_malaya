@@ -1,4 +1,4 @@
-## Simple Malaya
+## Mini Malaya
 
 #### Malaya without NN model
 
