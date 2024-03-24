@@ -11,7 +11,7 @@ import collections
 import tensorflow as tf
 import regex as re
 from functools import lru_cache
-from mini_malaya.text.function import transformer_textcleaning, malaya_textcleaning
+from minimalaya.text.function import transformer_textcleaning, malaya_textcleaning
 
 SEG_ID_A = 0
 SEG_ID_B = 1

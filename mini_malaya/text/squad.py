@@ -2,7 +2,7 @@ import collections
 import numpy as np
 import six
 import gc
-from mini_malaya.text.bpe import (
+from minimalaya.text.bpe import (
     encode_sentencepiece_ids,
     preprocess_text,
     encode_sentencepiece,

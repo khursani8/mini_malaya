@@ -2,10 +2,10 @@
 
 import re
 import numpy as np
-from mini_malaya.text.bahasa.lapor import lapor as _lapor_words
-from mini_malaya.text.bahasa.news import news as _news_words
-from mini_malaya.text.function import split_into_sentences, remove_empty_parenthesis
-from mini_malaya.text.ngram import ngrams
+from minimalaya.text.bahasa.lapor import lapor as _lapor_words
+from minimalaya.text.bahasa.news import news as _news_words
+from minimalaya.text.function import split_into_sentences, remove_empty_parenthesis
+from minimalaya.text.ngram import ngrams
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import pairwise_distances
 

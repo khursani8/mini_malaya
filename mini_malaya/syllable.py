@@ -1,8 +1,8 @@
 import re
 import logging
-from mini_malaya.text.function import PUNCTUATION, case_of, is_emoji
-from mini_malaya.text.regex import _expressions, _money, _date
-# from mini_malaya.path import SYLLABLE_VOCAB
+from minimalaya.text.function import PUNCTUATION, case_of, is_emoji
+from minimalaya.text.regex import _expressions, _money, _date
+# from minimalaya.path import SYLLABLE_VOCAB
 
 def replace_same_length(l, r):
     l = l.replace('-', '')

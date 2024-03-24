@@ -129,10 +129,10 @@ PATH_LANG_DETECTION = {
 
 S3_PATH_LANG_DETECTION = {
     'fasttext-original': {
-        'model': 'v34/language-detection/fasttext-mini_malaya.bin'
+        'model': 'v34/language-detection/fasttext-minimalaya.bin'
     },
     'fasttext-quantized': {
-        'model': 'v34/language-detection/fasttext-mini_malaya.ftz'
+        'model': 'v34/language-detection/fasttext-minimalaya.ftz'
     },
     'fasttext-176': {
         'model': 'fasttext-176/model.bin'

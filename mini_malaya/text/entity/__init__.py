@@ -3,13 +3,13 @@
 # Copyright (C) 2019 Malaya Project
 # Licensed under the MIT License
 # Author: huseinzol05 <husein.zol05@gmail.com>
-# URL: <https://mini_malaya.readthedocs.io/>
+# URL: <https://minimalaya.readthedocs.io/>
 # For license information, see https://github.com/huseinzol05/Malaya/blob/master/LICENSE
 import dateparser
 import re
-from mini_malaya.text.function import multireplace
-from mini_malaya.text.tatabahasa import date_replace
-from mini_malaya.text.regex import (
+from minimalaya.text.function import multireplace
+from minimalaya.text.tatabahasa import date_replace
+from minimalaya.text.regex import (
     _money,
     _temperature,
     _distance,
@@ -33,14 +33,14 @@ from mini_malaya.text.regex import (
     _left_yesterdaydatetodaytime,
     _right_yesterdaydatetodaytime,
 )
-from mini_malaya.text.entity.food import (
+from minimalaya.text.entity.food import (
     hot_ice_beverage_regex,
     fruit_juice_regex,
     unique_beverage_regex,
     total_foods_regex,
 )
-from mini_malaya.text.normalization import money, _normalize_money
-from mini_malaya.cluster import cluster_tagging
+from minimalaya.text.normalization import money, _normalize_money
+from minimalaya.cluster import cluster_tagging
 
 
 class EntityRegex:

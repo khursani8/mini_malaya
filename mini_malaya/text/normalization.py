@@ -1,22 +1,22 @@
 import re
 import traceback
-from mini_malaya.num2word import to_cardinal, to_ordinal
-from mini_malaya.word2num import word2num
-from mini_malaya.text.tatabahasa import (
+from minimalaya.num2word import to_cardinal, to_ordinal
+from minimalaya.word2num import word2num
+from minimalaya.text.tatabahasa import (
     hujung_malaysian,
     calon_dictionary,
     hujung,
     permulaan,
     laughing,
 )
-from mini_malaya.text.rules import rules_normalizer, rules_compound_normalizer
-from mini_malaya.text.function import case_of, MENGELUH, BETUL, GEMBIRA
-from mini_malaya.dictionary import ENGLISH_WORDS, MALAY_WORDS, is_malay, is_english
-from mini_malaya.text.regex import _expressions
+from minimalaya.text.rules import rules_normalizer, rules_compound_normalizer
+from minimalaya.text.function import case_of, MENGELUH, BETUL, GEMBIRA
+from minimalaya.dictionary import ENGLISH_WORDS, MALAY_WORDS, is_malay, is_english
+from minimalaya.text.regex import _expressions
 import math
 import logging
 
-logger = logging.getLogger('mini_malaya.text.normalization')
+logger = logging.getLogger('minimalaya.text.normalization')
 
 ignore_words = ['ringgit', 'sen', 'hmm', 'hhmm', 'hmmm']
 ignore_postfix = ['adalah', 'allah']
@@ -45,7 +45,7 @@ sastrawi_stemmer = None
 def initialize_sastrawi():
     global sastrawi_stemmer
     if sastrawi_stemmer is None:
-        from mini_malaya.stem import sastrawi
+        from minimalaya.stem import sastrawi
 
         sastrawi_stemmer = sastrawi()
 
@@ -732,7 +732,7 @@ def repeat_word(word, repeat=1):
     if word.startswith('se') or word.startswith('ter'):
         global sastrawi_stemmer
         if sastrawi_stemmer is None:
-            from mini_malaya.stem import sastrawi
+            from minimalaya.stem import sastrawi
 
             sastrawi_stemmer = sastrawi()
 

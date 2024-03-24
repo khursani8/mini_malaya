@@ -3,5 +3,5 @@
 # Copyright (C) 2019 Malaya Project
 # Licensed under the MIT License
 # Author: huseinzol05 <husein.zol05@gmail.com>
-# URL: <https://mini_malaya.readthedocs.io/>
+# URL: <https://minimalaya.readthedocs.io/>
 # For license information, see https://github.com/huseinzol05/Malaya/blob/master/LICENSE

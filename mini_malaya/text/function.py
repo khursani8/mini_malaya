@@ -3,17 +3,17 @@ import itertools
 import collections
 from unidecode import unidecode
 from itertools import combinations
-from mini_malaya.text.tatabahasa import (
+from minimalaya.text.tatabahasa import (
     stopword_tatabahasa,
     stopwords,
     stopwords_calon,
     laughing,
     mengeluh,
 )
-from mini_malaya.text.rules import normalized_chars
-from mini_malaya.text.unicode.emoji import emoji
-from mini_malaya.text.regex import _expressions
-from mini_malaya.text.ngram import ngrams
+from minimalaya.text.rules import normalized_chars
+from minimalaya.text.unicode.emoji import emoji
+from minimalaya.text.regex import _expressions
+from minimalaya.text.ngram import ngrams
 from difflib import SequenceMatcher as SM
 import logging
 
@@ -23,7 +23,7 @@ available_bs4 = True
 try:
     from bs4 import BeautifulSoup
 except Exception as e:
-    logger.warning('bs4 is not installed, `mini_malaya.text.function.remove_html_tags` will use regex')
+    logger.warning('bs4 is not installed, `minimalaya.text.function.remove_html_tags` will use regex')
     available_bs4 = False
 
 

@@ -1751,7 +1751,7 @@ group_compound = {
 
 """
 mw = []
-for w in mini_malaya.texts._malay_words._malay_words:
+for w in minimalaya.texts._malay_words._malay_words:
     mw.append(''.join([v for v in w if v in vowels]))
 subwords = []
 for w in mw:
@@ -2276,11 +2276,11 @@ bulan = {
 }
 
 """
-from mini_malaya.text.tatabahasa import consonants, vowels
+from minimalaya.text.tatabahasa import consonants, vowels
 import numpy as np
 
 compound_consonants = []
-for w in mini_malaya.text.bahasa.words.words:
+for w in minimalaya.text.bahasa.words.words:
     for no, c in enumerate(w[:-1]):
         if c in consonants and w[no + 1] in consonants:
             compound_consonants.append(c + w[no + 1])
